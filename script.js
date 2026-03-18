@@ -12,3 +12,8 @@ prevEl.addEventListener("click", () => {
 function updateGallery() {
   imageContainerEl.style.transform = `perspective(1000px) rotateY(${x}deg)`;
 }
+
+nextEl.addEventListener("click", () => {
+  x = x - 45;
+  updateGallery();
+});
